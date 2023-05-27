@@ -1,30 +1,16 @@
-**!! Atenção: Renomeie o seu repositório para (Tema)_(NomeDoProjeto). !!** 
+# Greed_Automatizacao_de_Reunioes_para_Monitor_de_OO 
 
-Temas:
- - Grafos1
- - Grafos2
- - PD
- - D&C
- - Greed
- - Final 
- 
- **!! *Não coloque os nomes dos alunos no título do repositório*. Exemplo de título correto: Grafos2_Labirinto-do-Minotauro !!**
- 
- (Apague essa seção)
+**Número da Lista**: 3<br>
+**Conteúdo da Disciplina**: Greed/Algoritmos Gananciosos<br>
 
-# NomedoProjeto
-
-**Número da Lista**: X<br>
-**Conteúdo da Disciplina**: XXXXXXXXXX<br>
-
-## Alunos
+## **Alunos**
 |Matrícula | Aluno |
 | -- | -- |
-| xx/xxxxxx  |  xxxx xxxx xxxxx |
-| xx/xxxxxx  |  xxxx xxxx xxxxx |
+| 20/0035703  |  Breno Alexandre Soares Garcia |
+| 20/0040201  |  Limírio Correia Guimarães |
 
 ## Sobre 
-Descreva os objetivos do seu projeto e como ele funciona. 
+Na matéria de Orientação a Objetos vários grupos de alunos deixaram para se esforçar nos seus projetos no final e agora todos querem ter reuniões com o monitor. Sendo necessária uma automatização para organizar tais reuniões, foi criado esse organizador.
 
 ## Screenshots
 Adicione 3 ou mais screenshots do projeto em funcionamento.
