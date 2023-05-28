@@ -25,7 +25,7 @@ Na matéria de Orientação a Objetos vários grupos de alunos deixaram para se 
 Para executar o projeto basta clonar o repositório e rodar a main.py do projeto.
 
 ## Outros 
-![Link](https://youtu.be/O9FGYhN1cOY)
+[Vídeo](https://youtu.be/O9FGYhN1cOY)
 
 
 
