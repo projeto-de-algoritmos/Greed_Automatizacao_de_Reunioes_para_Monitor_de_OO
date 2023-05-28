@@ -13,18 +13,19 @@
 Na matéria de Orientação a Objetos vários grupos de alunos deixaram para se esforçar nos seus projetos no final e agora todos querem ter reuniões com o monitor. Sendo necessária uma automatização para organizar tais reuniões, foi criado esse organizador.
 
 ## Screenshots
-Adicione 3 ou mais screenshots do projeto em funcionamento.
+![image](https://github.com/projeto-de-algoritmos/Greed_Automatizacao_de_Reunioes_para_Monitor_de_OO/assets/80782534/e7a8d78f-6aa0-4734-a65a-a0b3410f13e1)
+![image](https://github.com/projeto-de-algoritmos/Greed_Automatizacao_de_Reunioes_para_Monitor_de_OO/assets/80782534/67cadca6-e967-4a9c-b926-a042a613ed16)
+![image](https://github.com/projeto-de-algoritmos/Greed_Automatizacao_de_Reunioes_para_Monitor_de_OO/assets/80782534/d8941ded-e03f-494e-b37b-c544628ac814)
 
 ## Instalação 
-**Linguagem**: xxxxxx<br>
-**Framework**: (caso exista)<br>
-Descreva os pré-requisitos para rodar o seu projeto e os comandos necessários.
+**Linguagem**: Python 3<br>
+**Framework**: Tkinter<br>
 
 ## Uso 
-Explique como usar seu projeto caso haja algum passo a passo após o comando de execução.
+Para executar o projeto basta clonar o repositório e rodar a main.py do projeto.
 
 ## Outros 
-Quaisquer outras informações sobre seu projeto podem ser descritas abaixo.
+Vídeo
 
 
 
