@@ -1,10 +1,12 @@
 def intervalScheduling(agendamentos):
-    agendamentos.sort(key=lambda novo_grupo: novo_grupo.fim)
-
-    ordenadas = None
-    j = 1
-    for j in j :
-        if (agendamentos.novo_grupo.inicio[j] >= ordenadas.novo_grupo.fim[j]):
-            ordenadas.append(agendamentos[j])
+    # Ordena os agendamentos por tempo de término
+    agendamentos.sort(key=lambda x: x.fim)
     
-    return ordenadas
+    solucao = []
+   
+    for agendamento in agendamentos:
+        # Se a solução está vazia ou o agendamento não conflita com o último adicionado
+        if not solucao or agendamento.inicio >= solucao[-1].fim:
+            solucao.append(agendamento)
+
+    return solucao
