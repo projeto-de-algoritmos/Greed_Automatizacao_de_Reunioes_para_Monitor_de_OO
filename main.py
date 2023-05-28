@@ -1,5 +1,5 @@
 from tkinter import StringVar, IntVar, OptionMenu, Button, Tk, Label, Toplevel, Text
-
+from greedyIntSch import intervalScheduling
 
 class Grupo:
     def __init__(self, num_grupo, inicio, fim):
@@ -27,14 +27,16 @@ def salvar_e_adicionar():
     global grupo_selecionado, hora_inicio, minuto_inicio, hora_fim, minuto_fim
     # Obter os valores selecionados
     grupo = grupo_selecionado.get()
-    inicio = f"{hora_inicio.get()}:{minuto_inicio.get()}"
-    fim = f"{hora_fim.get()}:{minuto_fim.get()}"
+    combinacao = hora_inicio.get() + minuto_inicio.get()
+    inicio = int(combinacao)
+    combinacao = hora_fim.get() + minuto_fim.get()
+    fim = int(combinacao)
     # Criar um objeto Grupo com as informações
     novo_grupo = Grupo(grupo, inicio, fim)
     # Adicionar o objeto à lista de agendamentos
     agendamentos.append(novo_grupo)
     # Resetar os valores iniciais
-    grupo_selecionado.set(0)
+    grupo_selecionado.set(1)
     hora_inicio.set("00")
     minuto_inicio.set("00")
     hora_fim.set("00")
@@ -45,12 +47,16 @@ def salvar_e_gerar():
     global grupo_selecionado, hora_inicio, minuto_inicio, hora_fim, minuto_fim
     # Obter os valores selecionados
     grupo = grupo_selecionado.get()
-    inicio = f"{hora_inicio.get()}:{minuto_inicio.get()}"
-    fim = f"{hora_fim.get()}:{minuto_fim.get()}"
+    combinacao = hora_inicio.get() + minuto_inicio.get()
+    inicio = int(combinacao)
+    combinacao = hora_fim.get() + minuto_fim.get()
+    fim = int(combinacao)
     # Criar um objeto Grupo com as informações
     novo_grupo = Grupo(grupo, inicio, fim)
     # Adicionar o objeto à lista de agendamentos
     agendamentos.append(novo_grupo)
+    
+    # agendamentos = intervalScheduling(agendamentos)
 
     # Fechar a janela de agendamento de reuniões
     agenda.destroy()
@@ -73,6 +79,10 @@ def salvar_e_gerar():
 
     # Exibir os agendamentos na tabela
     for agendamento in agendamentos:
+        # Obter os valores selecionados para String
+        agendamento.inicio = f"{hora_inicio.get()}:{minuto_inicio.get()}"
+        agendamento.fim = f"{hora_fim.get()}:{minuto_fim.get()}"
+
         texto = f"Grupo {agendamento.num_grupo} - Reunião agendada de {agendamento.inicio} até {agendamento.fim}\n"
         text_box.insert("end", texto)
 
@@ -81,7 +91,6 @@ def salvar_e_gerar():
 
     # Iniciar o loop principal da janela
     tabela.mainloop()
-
 
 def agendar_horarios():
     global grupo_selecionado, hora_inicio, minuto_inicio, hora_fim, minuto_fim
@@ -108,14 +117,14 @@ def agendar_horarios():
     minuto_fim = StringVar(agenda)
 
     # Definir os valores iniciais
-    grupo_selecionado.set(0)
+    grupo_selecionado.set(1)
     hora_inicio.set("00")
     minuto_inicio.set("00")
     hora_fim.set("00")
     minuto_fim.set("00")
 
     # Criar as listas de opções
-    grupos = [i for i in range(26)]
+    grupos = [i for i in range(1, 26)]
     horas = [str(i) for i in range(8, 18)]
     minutos = [str(i).zfill(2) for i in range(0, 61, 5)]
 
