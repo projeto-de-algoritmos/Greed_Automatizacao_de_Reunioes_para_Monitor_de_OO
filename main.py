@@ -105,7 +105,7 @@ def agendar_horarios():
     janela.destroy()
     global agenda
     agenda = Tk()
-    agenda.title("Exemplo de Agendamento")
+    agenda.title("Agendamento")
     agenda.geometry("800x600")
     screen_width = agenda.winfo_screenwidth()
     screen_height = agenda.winfo_screenheight()
@@ -167,7 +167,7 @@ def agendar_horarios():
 
 # Criar a janela
 janela = Tk()
-janela.title("Minha Tela")
+janela.title("Menu")
 janela.geometry("800x600")
 screen_width = janela.winfo_screenwidth()
 screen_height = janela.winfo_screenheight()
